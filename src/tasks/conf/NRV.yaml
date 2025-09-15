@@ -1,7 +1,7 @@
 forecasts:
     - standalone_forecast_alaro0_antwrp1300                # standalone forecasts = "pure" toy models forecasts without any extra component (DFI, IAU, Fullpos...)
     - standalone_forecast_alaro1_antwrp1300
-    - standalone_forecast_alaro1_sfx_chmh2325
+    # Not present in CY49T2 - standalone_forecast_alaro1_sfx_chmh2325
     - standalone_forecast_arome_corsica2500
     - standalone_forecast_arpege_globaltst149c24
     - standalone_forecast_arpege_nosfx_globaltst149c24
@@ -27,7 +27,7 @@ objects:
     - ModelTL_arpege # TL model, adjoint test
 
 fullpos:
-    - Fp_lbc  # Fp_lbc = Fullpos creation of LBC files
+    - Fp_lbc  # Fp_lbc = Fullpos creation of LBC files - currently on arpege boundaries work properly
 
 surfex:
     - PP_geo_arome   # PP_geo_arome  = PGD+Prep on a range of LAM geometries

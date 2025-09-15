@@ -15,7 +15,7 @@ from .standalone.alaro import StandaloneAlaroForecast
 
 def setup(t, **kw):
     return Driver(tag='drv', ticket=t, options=kw, nodes=[
-        LoopFamily(tag='gmkpack', ticket=t,
+        LoopFamily(tag='dponly', ticket=t,
             loopconf='compilation_flavours',
             loopsuffix='.{}',
             nodes=[
